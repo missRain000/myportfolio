@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/portfoliov2.css' %}"> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title> portfolio v2 </title>
+
+</head>
+<body>
+<div class="main-container">
+    <div class="row">
+        <div class="navbar">
+            <div class="box-1"> <a href="#anchor-about-me"> About me </a>  </div>
+            <div class="box-2"> <a href="#anchor-skills"> Skills </a> </div>
+            <div class="box-3"> <a href="#anchor-projects"> Projects </a> </div>
+            <div class="box-4"> <a href="#anchor-contact-me">Contact me </a></div>
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="darkSwitch">
+                <label class="custom-control-label" for="darkSwitch">
+                    <i class="fas fa-moon"></i>
+                </label>
+            </div>
+        </div>
+        <!-------------------------------------------------->
+        <div class="hidden">
+
+            <div id="id-photo" class="cover-photo">
+            <!-- <div style="background-image: url({% static 'images/project1.png' %});" class="cover-photo"> -->
+                <h1 id="hello" style="font-size: 65px;"> HELLO THERE! </h1>
+                <p id="goodday"> Good day! </p>    
+            </div>
+
+        </div>
+
+        <div id="anchor-about-me" class="header">
+            <div class="s1-left-body">
+                <img class="profile-pic" src="{% static 'images/profile1.png' %}">
+            </div>
+    
+            <div class="introduction">
+                <div>
+                    <h1 style="font-size: 60px; "> I'm Lorena, a back-end developer and an aspiring digital artist.  </h1>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------------------------------->
+        <div id="anchor-skills" class="skills-container">
+            <div class="skills-details">
+                <div style="width: 100%; text-align: center; background-color: #e84545; color: white; border-radius: 20px 20px 0px 0px; padding-top: 5px; padding-bottom: 5px;">
+                    <h1> <i class="fas fa-star"></i> my set of skills <i class="fas fa-star"></i></h1>
+                </div>
+                <div class="skills">
+                    <img style="width: 100px; height: 80px;" class="skills-icons" src="{% static 'images/programming/django.png' %}">
+                </div>
+                <div class="skills">
+                    <img  style="width: 80px; height: 100px;" class="skills-icons" src="{% static 'images/programming/html.png' %}">
+                </div>
+                <div class="skills">
+                    <img style="width: 80px; height: 100px;" class="skills-icons" src="{% static 'images/programming/css.png' %}">
+                </div>
+                <div class="skills">
+                    <img style="width: 80px; height: 100px;" class="skills-icons" src="{% static 'images/programming/javascript.png' %}">
+                </div>
+                <div class="skills">
+                    <img  style="width: 110px; height: 100px;" class="skills-icons" src="{% static 'images/programming/microsoft-sql-server.jpg' %}">
+                </div>
+                <div class="skills">
+                    <img style="width: 100px; height: 100px;" class="skills-icons" src="{% static 'images/programming/photoshop.png' %}">
+                </div>
+                <div class="skills">
+                    <img style="width: 100px; height: 100px;" class="skills-icons" src="{% static 'images/programming/postgresql.png' %}">
+                </div>            
+                <div class="skills">
+                    <img style="width: 100px; height: 100px;" class="skills-icons" src="{% static 'images/programming/python.png' %}">
+                </div>
+                <div class="skills">
+                    <img style="width: 100px; height: 100px;" class="skills-icons" src="{% static 'images/programming/excel.png' %}">
+                </div>
+            </div>    
+
+            <div class="skills-big-icon">
+                <img class="skills-icon" src="{% static 'images/skills-icon.png' %}">         
+            </div>
+        </div>
+        <!-------------------------------------------------->
+        <div id="anchor-projects" class="my-project-section">
+            <div class="project-big-icon">
+                <img class="project-icon" src="{% static 'images/project-icon.png' %}">         
+            </div>
+
+            <div class="project-details">
+                <table class="project-table">
+                    <tr> <th> <i style="color: rgb(245, 22, 22);" class="fas fa-heart"></i> &nbsp My projects &nbsp <i style="color: rgb(245, 22, 22);" class="fas fa-heart"></i></th> </tr>
+                    <tr> <td>  E-commerce website </td></tr>
+                    <tr> <td>  Small python projects </td></tr>
+                    <tr> <td>  Computer-Aided Instruction - ENDEV </td></tr>
+                    <tr> <td>  Teachers Evaluation (MS Excel) </td></tr>
+                    <tr> <td>  Yearbook </td></tr>
+                </table>
+            </div>    
+        </div>
+        <!-------------------------------------------------->
+        <div id="anchor-contact-me" class="contact-me-section">
+                <div>
+                    <i style="color: #a4ebf3;" class="fas fa-envelope"></i> 
+                    <a href="mailto:ms.rain003@gmail.com" target="_blank"> <span> ms.rain003@gmail.com </span> </a>
+                </div>
+                <div>
+                    <i style="color: #053eff;" class="fab fa-behance"></i>
+                    <a href="https://www.behance.net/rainzamora" target="_blank"> <span> Behance </span> </a>
+                </div>
+                <div>
+                    <i style="color: #05CC46;" class="fab fa-deviantart"></i> 
+                    <a href="https://www.deviantart.com/iamrain3" target="_blank"> <span> DeviantArt </span> </a>
+                </div>
+                <div>
+                    <i style="color: black;" class="fab fa-github"></i> 
+                    <a href="https://github.com/missRain000" target="_blank"> <span> github </span> </a>
+                </div>  
+        </div>
+        <!-------------------------------------------------->
+
+
+    </div>
+
+</div>
+
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{% static 'js/dark-mode-switch.min.js' %}"></script>   
+<script>
+    $(document).ready(function(){
+        $("#id-photo").fadeIn(5000);
+        $("#hello").fadeIn(5000);
+        $("#goodday").fadeIn(5000);
+
+        $('div.hidden').fadeIn(1000).removeClass('hidden');
+    });
+</script>
+
+</body>
+</html>

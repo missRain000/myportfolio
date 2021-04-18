@@ -1,0 +1,210 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+
+h1, p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+h1{font-size: 56px;}
+h2{font-size: 36px;}
+h3{font-size: 28px;}
+h4{font-size: 24px;}
+h5{font-size: 20px;}
+h6{font-size: 16px;}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+
+}
+
+#navigation{
+    margin: 0;
+    padding: 5px;
+}
+
+#navigation li{
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.li{
+    text-decoration: none;
+}
+
+/* --- SECTION 1 --- */
+.s1 {
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+}
+
+.main-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.greetings-wrapper{
+    display: grid;
+    text-align: center;
+    align-content: center;
+    min-height: 10em;
+}
+
+.section-wrapper-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.top-left-wrapper{
+    background-color: aquamarine;
+}
+
+#profile-pic{
+    display: block;
+    margin: 20px auto;
+    width: 200px; 
+    height: 200px;
+    object-fit: cover;
+    align-content: center;
+}
+
+.top-right-wrapper{
+    display: grid;
+    text-align: center;
+    align-content: center;
+    background-color: aquamarine;
+
+}
+
+
+.bottom-left-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        'skill-type skill-type skill-type'
+        'skill-box-1 skill-box-2 skill-box-3'
+        'skill-box-4 skill-box-5 skill-box-6'
+        ;
+}
+
+.skill-type{
+    grid-area: skill-type;
+}
+
+.skill-box-1{
+    grid-area: skill-box-1;
+}
+
+.skill-box-2{
+    grid-area: skill-box-2;
+}
+
+.skill-box-3{
+    grid-area: skill-box-3;
+}
+
+.skill-box-4{
+    grid-area: skill-box-4;
+}
+
+.skill-box-5{
+    grid-area: skill-box-5;
+}
+
+.skill-box-6{
+    grid-area: skill-box-6;
+}
+
+
+#image-skills{
+    width: 72px; height: 72px;
+}
+
+.bottom-right-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        'skill-type skill-type skill-type'
+        'skill-box-1 skill-box-2 skill-box-3'
+        'skill-box-4 skill-box-5 skill-box-6'
+        ;
+
+}
+/* --- END OF SECTION 1 --- */
+/* --- SECTION 2 --- */
+
+.s2{
+    overflow: auto;
+}
+
+
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        'project-section-title project-section-title project-section-title'
+        'project-card-0 project-card-1 project-card-2'
+        'project-card-3 project-card-4 project-card-5'
+        ;
+    background-color: rgb(156, 70, 70);
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 20em;
+}
+
+.project-section-title{
+    grid-area: project-section-title;
+}
+
+.project-card-0{
+    grid-area: project-card-0;
+}
+
+.project-card-1{
+    grid-area: project-card-1;
+}
+
+.project-card-2{
+    grid-area: project-card-2;
+}
+
+.project-card-3{
+    grid-area: project-card-3;
+}
+
+.project-card-4{
+    grid-area: project-card-4;
+}
+
+#project-1-image{
+    width: 12rem;
+}
+
+
+/* --- END OF SECTION 2 --- */
+
+/* para maging flexible */
+@media screen and (max-width: 768px){
+    .main-container, .project-container{
+        width: 95%;
+
+    }
+    #profile-pic{
+        visibility: hidden;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .section-wrapper-1{
+        display: block;
+    }
+
+}

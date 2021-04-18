@@ -1,0 +1,1 @@
+default_app_config = 'apps.portfoliov1.apps.Portfoliov1Config'

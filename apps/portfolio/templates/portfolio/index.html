@@ -1,0 +1,149 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lorena  </title>
+    <link rel="stylesheet" href="{% static 'css/dark-mode.css' %}"> 
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">     
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <ul id="navigation">
+            <li><a id="lnks" href="#"> Expertise </a> </li>
+            <li><a id="lnks" href="#"> other skills </a> </li>
+            <li><a id="lnks" href="#"> Projects </a> </li>
+            <li><a id="lnks" href="#"> Contact me </a> </li>
+            <li> 
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="darkSwitch">
+                    <label class="custom-control-label" for="darkSwitch">
+                        <i class="fas fa-moon"></i>
+                    </label>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- SECTION 1-->
+    <section class="s1">
+        <div class="main-container">
+            <div class="greetings-wrapper">
+                <h1> Hello there </h1>
+                <p> Time is gold </p>    
+            </div>
+
+            <!--  next -->
+            <div class="section-wrapper-1">
+                <div class="top-left-wrapper">
+                    <img id="profile-pic" src="{% static 'images/profile1.png' %}">
+                </div>
+
+                <div class="top-right-wrapper">
+                    <h2>My name is Lorena Zamora 24 years old</h2> 
+
+                </div>
+
+                <div class="bottom-left-wrapper">
+                    <div class="skill-type">my programming skills</div>
+                    <div class="skill-box-1"><img id="image-skills" src="{% static 'images/programming/css-3.png' %}"></div>
+                    <div class="skill-box-2"><img id="image-skills" src="{% static 'images/programming/html-5.png' %}"></div>
+                    <div class="skill-box-3"><img id="image-skills" src="{% static 'images/programming/python.png' %}"></div>
+                    <div class="skill-box-4"><img id="image-skills" src="{% static 'images/programming/python.png' %}"></div>
+                    <div class="skill-box-5"><img id="image-skills" src="{% static 'images/programming/html-5.png' %}"></div>
+                    <div class="skill-box-6"><img id="image-skills" src="{% static 'images/programming/css-3.png' %}"></div>
+                </div>
+
+                <div class="bottom-left-wrapper">
+                    <div class="skill-type">my editing skills</div>
+                    <div class="skill-box-1"><img id="image-skills" src="{% static 'images/programming/css-3.png' %}"></div>
+                    <div class="skill-box-2"><img id="image-skills" src="{% static 'images/programming/html-5.png' %}"></div>
+                    <div class="skill-box-3"><img id="image-skills" src="{% static 'images/programming/python.png' %}"></div>
+                    <div class="skill-box-4"><img id="image-skills" src="{% static 'images/programming/python.png' %}"></div>
+                    <div class="skill-box-5"><img id="image-skills" src="{% static 'images/programming/html-5.png' %}"></div>
+                    <div class="skill-box-6"><img id="image-skills" src="{% static 'images/programming/css-3.png' %}"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2 -->    
+    <section class="s2">
+        <div class="project-container">
+            <div class="project-section-title"> <h3> Projects </h3> </div>            
+
+            <div class="project-card-0">
+                <img id="project-1-image" src="{% static 'images/project1.png' %}">
+                <div class="project-info">
+                    <p> Details for the project 0 <a href="#">Github link</a></p>                    
+                </div>  
+            </div>
+
+            <div class="project-card-1">
+                <img id="project-1-image" src="{% static 'images/project1.png' %}">
+                <div class="project-info">
+                    <p> Details for the project 1 <a href="#">Github link</a></p>
+                </div>  
+            </div>
+
+            <div class="project-card-2">
+                <img id="project-1-image" src="{% static 'images/project1.png' %}">
+                <div class="project-info">
+                    <p> Details for the project 2 </p>
+                    <a href="#">Github link</a>
+                </div>  
+            </div>
+
+            <div class="project-card-3">
+                <img id="project-1-image" src="{% static 'images/project1.png' %}">
+                <div class="project-info">
+                    <p> Details for the project 3 </p>
+                    <a href="#">Github link</a>
+                </div>  
+            </div>
+
+            <div class="project-card-4">
+                <img id="project-1-image" src="{% static 'images/project1.png' %}">
+                <div class="project-info">
+                    <p> Details for the project 4 </p>
+                    <a href="#">Github link</a>
+                </div>  
+            </div>
+
+            <div class="project-card-5">
+                <img id="project-1-image" src="{% static 'images/project1.png' %}">
+                <div class="project-info">
+                    <p> Details for the project 5 </p>
+                    <a href="#">Github link</a>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3 -->    
+    <section class="s3">
+        <div class="main-container">
+            <h3> Other works </h3>
+        </div>
+    </section>   
+
+    <!-- SECTION 4 -->    
+    <section class="s4">
+        <div class="main-container">
+            <h3> Contact me </h3>
+        </div>
+    </section>   
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+    <script src="{% static 'js/dark-mode-switch.min.js' %}"></script>  
+</body>
+</html>
