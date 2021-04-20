@@ -39,8 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #apps
-    'apps.portfolio',
-    'apps.portfoliov1',
     'apps.portfoliov2',
 ]
 
