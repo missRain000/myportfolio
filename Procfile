@@ -1,2 +1,2 @@
-web gunicorn miss-zamora-portfolio.wsgi --log-file -
+web: gunicorn myportfolio.wsgi --log-file -
 
